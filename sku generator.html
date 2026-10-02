@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKU Generator 🪷₊ ⊹</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <style>
+
+    .gradient-navbar{
+        background: linear-gradient(to right,#ff95ce, #ffbfe2, 	#ffedf7);
+    }
+
+    </style>
+
+    <nav class="navbar navbar-expand-sm navbar-light gradient-navbar">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="mocha.png" alt="logo" height="80px"> </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" style="color: white;">
+                    <span class="navbar-toggler-icon" style="color: white;"> </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+
+                   <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link navname" href="index.html" style="color: 	#ffedf7; font-family: cursive; text-shadow: 0px 0px 8px rgba(255,149,206 1);"> Receipt Generator </a>  
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sku generator.html" style="color: 	#ffedf7; font-family: cursive; text-shadow: 0px 0px 8px rgba(255,149,206 1);"> SKU Generator </a>  
+                        </li>
+                        
+                   </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    <!-- sku style -->
+    <style>
+            .container{
+                background:	#ffedf7 ;
+                border-radius: 20px;
+                margin: 20px;
+                text-align:center;
+                padding: 40px;
+                box-shadow: 0px 0px 12px rgba(255,149,206, 1);
+                width: 550px;
+                font-family: cursive;
+                color: #ffbfe2;
+            }
+
+            .submitbut {
+                font-family: cursive;
+                color: #ffedf7;
+                font-size: 17px;
+                margin-top: 12px;
+                background-color: #ff95ce;
+                border: none;
+                padding: 6px 12px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            .skugen{
+                background:	#ffedf7 ;
+                border-radius: 10px;
+                margin: 20px;
+                text-align:center;
+                padding: 40px;
+                box-shadow: 0px 0px 12px rgba(255,149,206, 1);
+                width: 550px;
+                font-family: cursive;
+                color: #ffbfe2;
+            }
+
+            .menu{
+                font-size: 20px;
+            }
+
+            .footer{
+                background:	#ffedf7;
+                font-family: cursive;
+                font-size: 18px;
+                margin-bottom: 0px;
+                color: #ffbfe2;
+                padding: 20px 0;
+                width: 100%;
+                text-align: center;
+                width: 100%;
+                margin-top: 50px;
+                text-shadow: 0px 0px 12px rgba(255,149,206, 1);
+            }
+
+
+    </style>
+
+    <!-- SKU form (project) -->
+    <center><div class="container">
+        <h2 class="title">ʚ SKU generator🌸 ɞ</h2>
+
+        <label for="category" style="margin-top: 10px;">🧾 Choose a category:</label><br>
+        <select name="category" id="category" style="border-radius: 10px; border: 1px solid #ffbfe2; padding: 4px 8px; margin-bottom: 10px;">
+            <option value="Drinks">Drinks </option>
+            <option value="Food">Food</option>
+        </select><br>
+
+        <label for="product_name" class="items">☕ Product Name:</label><br>
+        <input type="text" id="product_name" class="items" placeholder="e.g. Americano" style="border-radius: 10px; border: 1px solid #ffbfe2; padding: 4px 8px; margin-bottom: 10px;"><br>
+
+        <label for="quantity" class="items">💻 Stock quantity</label><br>
+        <input type="number" id="quantity" class="items" placeholder="e.g. 43" style="border-radius: 10px; border: 1px solid #ffbfe2; padding: 4px 8px; margin-bottom: 10px;"><br>
+
+        <button py-click="SKU_generator" class="submitbut">𐙚Generate your SKU </button>
+    </div>
+
+    <!-- SKU Generator (project) -->
+    <div class="skugen">
+        <h2 class="title" style="margin-top: 15px;">⋆.˚Here is your SKU! 🧾</h2>
+
+        <div id="sku_output" class="menu" style="margin-top: 15px;"></div>
+    </div>
+    </center>
+    </div>
+
+    <!-- footer -->
+    <center>
+        <footer class="footer"></> SKU Generator - 1st Quarter Project ☕🌸</footer>
+    </center>
+
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>

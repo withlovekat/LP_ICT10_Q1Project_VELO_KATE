@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Generator ☕₊ ⊹</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+
+    <!-- skills test style -->
+    <style>
+        .title {
+            font-family: cursive;
+            color: #ffbfe2;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        body {
+            color: #ffedf7;
+        }
+
+        .menu {
+            font-family: cursive;
+            color: #ffbfe2;
+            font-size: 20px;
+        }
+
+        .items {
+            font-family: cursive;
+            color: #ffbfe2;
+            font-size: 17px;
+        }
+
+        .submitbut {
+            font-family: cursive;
+            color: #ffedf7;
+            font-size: 17px;
+            margin-top: 12px;
+            background-color: #ff95ce;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 10px;
+        }
+
+        
+    </style>
+   
+</head>
+<body>
+    <!-- navbar style -->
+    <style>
+
+        .gradient-navbar{
+            background: linear-gradient(to right,#ff95ce, #ffbfe2, 	#ffedf7);
+
+        }
+
+    </style>
+
+    <nav class="navbar navbar-expand-sm navbar-light gradient-navbar">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="mocha.png" alt="logo" height="80px"> </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" style="color: white;">
+                    <span class="navbar-toggler-icon" style="color: white;"> </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+
+                   <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link navname" href="index.html" style="color: #ffedf7; font-family: cursive; text-shadow: 0px 0px 8px rgba(255,149,206 1);"> Receipt Generator </a>  
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sku generator.html" style="color: #ffedf7; font-family: cursive; text-shadow: 0px 0px 8px rgba(255,149,206 1);"> SKU Generator </a>  
+                        </li>
+                        
+                   </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- skills test style -->
+        <style>
+            .container{
+                background:	#ffedf7 ;
+                border-radius: 20px;
+                margin: 20px;
+                text-align:center;
+                padding: 40px;
+                box-shadow: 0px 0px 12px rgba(255,149,206, 1);
+                width: 550px;
+            }
+
+            .footer{
+                background:	#ffedf7;
+                font-family: cursive;
+                font-size: 18px;
+                margin-bottom: 0px;
+                color: #ffbfe2;
+                padding: 20px 0;
+                width: 100%;
+                text-align: center;
+                width: 100%;
+                margin-top: 50px;
+                text-shadow: 0px 0px 12px rgba(255,149,206, 1);
+            }
+
+
+        </style>
+
+
+
+    <!-- order form (skills test) -->
+     <center><div class="container">
+    <h2 class="title">Coffee shop 🪷☕</h2>
+    <h3 class="menu">☕ Menu ⊹</h3>
+
+    
+    <input type="checkbox" id="item1" name="americano" class="items" value="135">
+    <label for="item1" class="items">Americano ❀ ₱135</label><br> 
+
+    <input type="checkbox" id="item2" name="spanishlatte" class="items" value="150">
+    <label for="item2" class="items">Spanish Latte ❀ ₱150</label><br>
+    
+    <input type="checkbox" id="item3" name="coldbrew" class="items" value="270">
+    <label for="item3" class="items">Cold Brew Malt ❀ ₱270</label><br> 
+
+    <input type="checkbox" id="item4" name="affogato" class="items" value="175">
+    <label for="item4" class="items">Affogato ❀ ₱175</label><br> 
+
+    <input type="checkbox" id="item5" name="caramelmacchiato" class="items" value="160">
+    <label for="item5" class="items">Caramel Macchiato ❀ ₱160</label><br>
+   
+
+    <button py-click="create_order" class="submitbut" style="margin-bottom: 10px;">𐙚Create order</button>
+    </div></center>
+
+    <!-- receipt generator (skills test) -->
+    <center><div class="container">
+        <h2 class="title" style="margin-top: 15px;">⋆.˚Receipt generator 🧾</h2>
+
+        <div id="show" class="menu">
+        <p class="items">Here is your receipt!</p>
+    </div></center>
+
+    </div>
+
+    <!-- footer -->
+    <center>
+        <footer class="footer"></> Receipt Generator - 1st Quarter Skills Test ☕🌸</footer>
+    </center>
+
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
